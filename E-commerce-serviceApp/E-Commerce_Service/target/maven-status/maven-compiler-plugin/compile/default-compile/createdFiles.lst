@@ -1,0 +1,8 @@
+com\example\rabbit_mq\CommonUser.class
+com\example\model\Vehicle.class
+com\example\service\User_Vehicle_Service.class
+com\example\service\User_Service_impl.class
+com\example\model\User.class
+com\example\repository\User_Vehicle_Repository.class
+com\example\controller\Vehicle_controller.class
+com\example\ECommerceServiceApplication.class
