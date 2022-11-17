@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/E-commerce-serviceApp/E-Commerce_Service/E-Commerce_Service.iml" filepath="$PROJECT_DIR$/E-commerce-serviceApp/E-Commerce_Service/E-Commerce_Service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/E-commerce-Application.iml" filepath="$PROJECT_DIR$/.idea/E-commerce-Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/E-commerce-serviceApp/E-commerce-serviceApp.iml" filepath="$PROJECT_DIR$/E-commerce-serviceApp/E-commerce-serviceApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/E-commerce-serviceApp/authenticate_app_tokengen/authenticate_app_tokengen.iml" filepath="$PROJECT_DIR$/E-commerce-serviceApp/authenticate_app_tokengen/authenticate_app_tokengen.iml" />
+    </modules>
+  </component>
+</project>
