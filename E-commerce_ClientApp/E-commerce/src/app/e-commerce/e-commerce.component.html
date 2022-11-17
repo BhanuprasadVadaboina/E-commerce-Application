@@ -1,0 +1,61 @@
+<form [formGroup]="vehicleForm"  (ngSubmit)="addVehicle()" *ngIf="role=='ADMIN_User'">
+    <div>
+        vehicleId<input type="text" formControlName="vehicleId"/>
+    </div>
+    <div>
+        vehicle name<input type="text" formControlName="vehicle_name"/>
+    </div>
+    <div>
+        color<input type="text" formControlName="color"/>
+    </div>
+    <div>
+        fuel type<input type="text" formControlName="fuelType"/>
+    </div>
+    <div>
+        noOfSeats<input type="number" formControlName="noOfSeats"/>
+    </div>
+    <div>
+        safety<input type="text" formControlName="safety"/>
+    </div>
+  <input type="submit" value="add vehicle">  
+</form>
+<hr>
+<div style="display: inline-flex;font-weight:bold">Hi {{name}}
+    <div style="margin-left:500px ;">
+        <button style="size:100px ;" type="button"  (click)="viewcart()" *ngIf="role=='ROLE_User'">MyCart</button>
+        <button type="button"  (click)="refresh()" *ngIf="role=='ROLE_User'">Refresh</button>
+        <button type="button"  (click)="refresh1()" *ngIf="role=='ADMIN_User'">Refresh</button>
+    </div>
+</div>
+<div *ngFor="let items of cartItems">
+    {{items|json}}
+</div>
+<hr>
+<div *ngFor="let v of vehicles">
+    {{v|json}}<input type="button" value="delete" (click)="deleteVehicle(v.vehicleId)" *ngIf="role=='ADMIN_User'"><button type="button" (click)="update(v)" *ngIf="role=='ADMIN_User'">update</button>
+    <button type="button" (click)="addtocart(v)" *ngIf="role=='ROLE_User'">Addtocart</button>
+</div>
+<hr>
+
+<form [formGroup]="updateForm" (ngSubmit)="updateVehicle()" *ngIf="enable"> 
+    <div>
+        vehicleId<input type="text" formControlName="vehicleId"/>
+    </div>
+    <div>
+        vehicle name<input type="text" formControlName="vehicle_name"/>
+    </div>
+    <div>
+        color<input type="text" formControlName="color"/>
+    </div>
+    <div>
+        fuel type<input type="text" formControlName="fuelType"/>
+    </div>
+    <div>
+        noOfSeats<input type="number" formControlName="noOfSeats"/>
+    </div>
+    <div>
+        safety<input type="text" formControlName="safety"/>
+    </div>
+  <input type="submit" value="update vehicle">  
+</form>
+

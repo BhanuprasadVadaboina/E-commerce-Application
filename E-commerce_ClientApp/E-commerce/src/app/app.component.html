@@ -1,0 +1,19 @@
+<div style="background-color:aquamarine;height: 700px;">
+<div>
+    <a routerLink="/loginview"><button  style="font-size:20px ;" *ngIf="enable==false && sinup==false" (click)="login()">login</button></a>
+</div>
+<div style="margin-left:1400px ;margin-bottom: 50px;margin-top:-15px;">
+    <a routerLink="/loginview"><button (click)="logout()" style="font-size:20px ;" *ngIf="enable==true">logout</button></a>
+</div>
+<div>
+    <a routerLink="/e-commerceview"><button style="font-size:20px ;">E-commerce</button></a>
+</div>
+<div style="margin-left:1390px ;">
+    <a routerLink="/signupview"><button style="font-size:20px ;" *ngIf="enable==false" (click)="signup()">Signup</button></a>
+</div>
+<hr>
+<router-outlet>
+
+</router-outlet>
+</div>
+
